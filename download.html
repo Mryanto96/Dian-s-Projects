@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Biologi SMA N 1 Agats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+    <div id="mainContent" class="main-content" style="display: block;">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-menu">
+                    <div class="logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>BIOLOGI<br><small>SMA N 1 AGATS</small></span>
+                    </div>
+                    
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <a href="materi.html"><i class="fas fa-book"></i> Materi <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="materi.html#kelas10">Kelas 10</a>
+                                <a href="materi.html#kelas11">Kelas 11</a>
+                                <a href="materi.html#kelas12">Kelas 12</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="download.html"><i class="fas fa-download"></i> Download <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="download.html#modul">Modul PDF</a>
+                                <a href="download.html#presentasi">Presentasi</a>
+                                <a href="download.html#latihan">Soal Latihan</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="praktikum.html"><i class="fas fa-flask"></i> Praktikum</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="tentang.html"><i class="fas fa-user"></i> Guru</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Download Content -->
+        <section class="section" style="margin-top: 80px;">
+            <div class="container">
+                <h1 class="section-title">Download Materi Pembelajaran</h1>
+                
+                <!-- Modul PDF -->
+                <div id="modul" class="mb-16">
+                    <h2 class="download-section-title">Modul PDF</h2>
+                    <div class="download-grid">
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-file-pdf"></i>
+                                <h3>Struktur Sel - Kelas 10</h3>
+                            </div>
+                            <p>Modul lengkap tentang organel sel, membran sel, dan proses kehidupan dalam sel.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 2.1 MB</span>
+                                <span><i class="fas fa-clock"></i> 45 halaman</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('modul-struktur-sel.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-file-pdf"></i>
+                                <h3>Genetika - Kelas 11</h3>
+                            </div>
+                            <p>Hukum Mendel, DNA, RNA, dan pewarisan sifat pada makhluk hidup.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 3.2 MB</span>
+                                <span><i class="fas fa-clock"></i> 60 halaman</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('modul-genetika.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-file-pdf"></i>
+                                <h3>Bioteknologi - Kelas 12</h3>
+                            </div>
+                            <p>Rekayasa genetika, kloning, dan aplikasi bioteknologi modern.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 2.9 MB</span>
+                                <span><i class="fas fa-clock"></i> 55 halaman</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('modul-bioteknologi.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-file-pdf"></i>
+                                <h3>Sistem Imun - Kelas 11</h3>
+                            </div>
+                            <p>Mekanisme pertahanan tubuh dan respons imun spesifik dan non-spesifik.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 2.5 MB</span>
+                                <span><i class="fas fa-clock"></i> 40 halaman</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('modul-sistem-imun.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presentasi -->
+                <div id="presentasi" class="mb-16">
+                    <h2 class="download-section-title">Presentasi</h2>
+                    <div class="download-grid">
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-file-powerpoint"></i>
+                                <h3>PPT Struktur Sel</h3>
+                            </div>
+                            <p>Presentasi lengkap dengan gambar dan animasi tentang struktur sel.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PPTX - 8.5 MB</span>
+                                <span><i class="fas fa-clock"></i> 35 slides</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('ppt-struktur-sel.pptx')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-file-powerpoint"></i>
+                                <h3>PPT Genetika</h3>
+                            </div>
+                            <p>Presentasi interaktif tentang hukum Mendel dan pewarisan sifat.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PPTX - 7.2 MB</span>
+                                <span><i class="fas fa-clock"></i> 42 slides</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('ppt-genetika.pptx')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soal Latihan -->
+                <div id="latihan" class="mb-16">
+                    <h2 class="download-section-title">Soal Latihan</h2>
+                    <div class="download-grid">
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-tasks"></i>
+                                <h3>Latihan Kelas 10</h3>
+                            </div>
+                            <p>Kumpulan soal pilihan ganda dan essay untuk kelas 10 dengan pembahasan.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 1.8 MB</span>
+                                <span><i class="fas fa-clock"></i> 50 soal</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('soal-kelas-10.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-tasks"></i>
+                                <h3>Latihan Kelas 11</h3>
+                            </div>
+                            <p>Bank soal genetika, metabolisme, dan sistem koordinasi untuk kelas 11.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 2.3 MB</span>
+                                <span><i class="fas fa-clock"></i> 65 soal</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('soal-kelas-11.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+
+                        <div class="download-card">
+                            <div class="download-header">
+                                <i class="fas fa-tasks"></i>
+                                <h3>Try Out UN</h3>
+                            </div>
+                            <p>Simulasi Ujian Nasional Biologi dengan kunci jawaban dan pembahasan.</p>
+                            <div class="download-info">
+                                <span><i class="fas fa-file"></i> PDF - 3.1 MB</span>
+                                <span><i class="fas fa-clock"></i> 40 soal</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadFile('try-out-un.pdf')">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Kontak</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> SMA Negeri 1 Agats</p>
+                        <p><i class="fas fa-envelope"></i> biologi@sman1agats.sch.id</p>
+                        <p><i class="fas fa-phone"></i> (0981) 123-4567</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Tautan Cepat</h3>
+                        <a href="index.html">Home</a>
+                        <a href="materi.html">Materi</a>
+                        <a href="download.html">Download</a>
+                        <a href="praktikum.html">Praktikum</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Media Sosial</h3>
+                        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+                        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="#"><i class="fab fa-google-drive"></i> Google Drive</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                     <p>&copy; 2025 Diana Seran. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        .download-section-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .download-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .download-header i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .download-header h3 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin: 0;
+        }
+
+        .download-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .download-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum - Biologi SMA N 1 Agats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+    <div id="mainContent" class="main-content" style="display: block;">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-menu">
+                    <div class="logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>BIOLOGI<br><small>SMA N 1 AGATS</small></span>
+                    </div>
+                    
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <a href="materi.html"><i class="fas fa-book"></i> Materi <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="materi.html#kelas10">Kelas 10</a>
+                                <a href="materi.html#kelas11">Kelas 11</a>
+                                <a href="materi.html#kelas12">Kelas 12</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="download.html"><i class="fas fa-download"></i> Download <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="download.html#modul">Modul PDF</a>
+                                <a href="download.html#presentasi">Presentasi</a>
+                                <a href="download.html#latihan">Soal Latihan</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="praktikum.html"><i class="fas fa-flask"></i> Praktikum</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="tentang.html"><i class="fas fa-user"></i> Guru</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Praktikum Content -->
+        <section class="section" style="margin-top: 80px;">
+            <div class="container">
+                <h1 class="section-title">Panduan Praktikum Biologi</h1>
+                
+                <div class="praktikum-intro">
+                    <p style="text-align: center; font-size: 1.1rem; color: #64748b; max-width: 800px; margin: 0 auto 40px;">
+                        Praktikum biologi dirancang untuk memperkuat pemahaman konsep teoritis melalui eksperimen langsung. 
+                        Selalu perhatikan keselamatan dan ikuti petunjuk dengan teliti.
+                    </p>
+                </div>
+
+                <div class="praktikum-grid">
+                    <!-- Praktikum Kelas 10 -->
+                    <div class="praktikum-category">
+                        <h2 class="category-title">Kelas 10</h2>
+                        <div class="cards-grid">
+                            <div class="card praktikum-card">
+                                <div class="praktikum-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <h3>Pengamatan Sel</h3>
+                                <p><strong>Tujuan:</strong> Mengamati struktur sel tumbuhan dan hewan</p>
+                                <p><strong>Alat:</strong> Mikroskop, kaca preparat, cover glass</p>
+                                <p><strong>Bahan:</strong> Epidermis bawang, epitel pipi</p>
+                                <div class="praktikum-actions">
+                                    <a href="download.html" class="download-btn">
+                                        <i class="fas fa-download"></i> Panduan
+                                    </a>
+                                    <a href="download.html" class="download-btn secondary">
+                                        <i class="fas fa-file-alt"></i> Laporan
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card praktikum-card">
+                                <div class="praktikum-icon">
+                                    <i class="fas fa-vial"></i>
+                                </div>
+                                <h3>Uji Makanan</h3>
+                                <p><strong>Tujuan:</strong> Mengidentifikasi kandungan zat makanan</p>
+                                <p><strong>Alat:</strong> Tabung reaksi, pipet, penangas</p>
+                                <p><strong>Bahan:</strong> Larutan Benedict, Biuret, iodine</p>
+                                <div class="praktikum-actions">
+                                    <a href="download.html" class="download-btn">
+                                        <i class="fas fa-download"></i> Panduan
+                                    </a>
+                                    <a href="download.html" class="download-btn secondary">
+                                        <i class="fas fa-file-alt"></i> Laporan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Praktikum Kelas 11 -->
+                    <div class="praktikum-category">
+                        <h2 class="category-title">Kelas 11</h2>
+                        <div class="cards-grid">
+                            <div class="card praktikum-card">
+                                <div class="praktikum-icon">
+                                    <i class="fas fa-dna"></i>
+                                </div>
+                                <h3>Ekstraksi DNA</h3>
+                                <p><strong>Tujuan:</strong> Mengisolasi DNA dari buah atau sayuran</p>
+                                <p><strong>Alat:</strong> Blender, saringan, tabung reaksi</p>
+                                <p><strong>Bahan:</strong> Buah pepaya, deterjen, etanol</p>
+                                <div class="praktikum-actions">
+                                    <a href="download.html" class="download-btn">
+                                        <i class="fas fa-download"></i> Panduan
+                                    </a>
+                                    <a href="download.html" class="download-btn secondary">
+                                        <i class="fas fa-file-alt"></i> Laporan
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card praktikum-card">
+                                <div class="praktikum-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <h3>Respirasi Serangga</h3>
+                                <p><strong>Tujuan:</strong> Mengamati laju respirasi pada serangga</p>
+                                <p><strong>Alat:</strong> Respirometer, stopwatch</p>
+                                <p><strong>Bahan:</strong> Jangkrik, KOH, kapas</p>
+                                <div class="praktikum-actions">
+                                    <a href="download.html" class="download-btn">
+                                        <i class="fas fa-download"></i> Panduan
+                                    </a>
+                                    <a href="download.html" class="download-btn secondary">
+                                        <i class="fas fa-file-alt"></i> Laporan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Praktikum Kelas 12 -->
+                    <div class="praktikum-category">
+                        <h2 class="category-title">Kelas 12</h2>
+                        <div class="cards-grid">
+                            <div class="card praktikum-card">
+                                <div class="praktikum-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h3>Kultur Jaringan</h3>
+                                <p><strong>Tujuan:</strong> Teknik perbanyakan tanaman secara in vitro</p>
+                                <p><strong>Alat:</strong> Laminar air flow, autoklaf</p>
+                                <p><strong>Bahan:</strong> Eksplan, media MS, hormon</p>
+                                <div class="praktikum-actions">
+                                    <a href="download.html" class="download-btn">
+                                        <i class="fas fa-download"></i> Panduan
+                                    </a>
+                                    <a href="download.html" class="download-btn secondary">
+                                        <i class="fas fa-file-alt"></i> Laporan
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card praktikum-card">
+                                <div class="praktikum-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <h3>Analisis Kualitas Air</h3>
+                                <p><strong>Tujuan:</strong> Mengetahui tingkat pencemaran air</p>
+                                <p><strong>Alat:</strong> pH meter, DO meter, turbidimeter</p>
+                                <p><strong>Bahan:</strong> Sampel air dari berbagai sumber</p>
+                                <div class="praktikum-actions">
+                                    <a href="download.html" class="download-btn">
+                                        <i class="fas fa-download"></i> Panduan
+                                    </a>
+                                    <a href="download.html" class="download-btn secondary">
+                                        <i class="fas fa-file-alt"></i> Laporan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety Section -->
+                <div class="safety-section">
+                    <h2 class="safety-title">Keselamatan Praktikum</h2>
+                    <div class="safety-grid">
+                        <div class="safety-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Perlengkapan Safety</h3>
+                            <p>Gunakan jas lab, sarung tangan, dan kacamata pelindung</p>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-ban"></i>
+                            <h3>Larangan</h3>
+                            <p>Dilarang makan, minum, atau bermain-main di lab</p>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-first-aid"></i>
+                            <h3>P3K</h3>
+                            <p>Ketahui lokasi kotak P3K dan cara penggunaan</p>
+                        </div>
+                        <div class="safety-item">
+                            <i class="fas fa-recycle"></i>
+                            <h3>Limbah</h3>
+                            <p>Buang limbah kimia sesuai prosedur yang ditentukan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Kontak</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> SMA Negeri 1 Agats</p>
+                        <p><i class="fas fa-envelope"></i> biologi@sman1agats.sch.id</p>
+                        <p><i class="fas fa-phone"></i> (0981) 123-4567</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Tautan Cepat</h3>
+                        <a href="index.html">Home</a>
+                        <a href="materi.html">Materi</a>
+                        <a href="download.html">Download</a>
+                        <a href="praktikum.html">Praktikum</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Media Sosial</h3>
+                        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+                        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="#"><i class="fab fa-google-drive"></i> Google Drive</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Diana Seran. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        .praktikum-intro {
+            margin-bottom: 40px;
+        }
+
+        .praktikum-category {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .praktikum-card {
+            text-align: left;
+        }
+
+        .praktikum-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .praktikum-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .praktikum-card h3 {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .praktikum-card p {
+            color: #64748b;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .praktikum-card p strong {
+            color: var(--primary);
+        }
+
+        .praktikum-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .download-btn.secondary {
+            background: #64748b;
+        }
+
+        .download-btn.secondary:hover {
+            background: #475569;
+        }
+
+        .safety-section {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        .safety-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .safety-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .safety-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .safety-item i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .safety-item h3 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .safety-item p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Biologi SMA N 1 Agats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="scanning-container">
+            <div class="hologram-effect"></div>
+            <div class="particles" id="particles"></div>
+            <div class="scan-center">
+                <div class="fingerprint-3d">
+                    <div class="fingerprint-inner">
+                        <div class="fingerprint-layer layer-1"></div>
+                        <div class="fingerprint-layer layer-2"></div>
+                        <div class="fingerprint-layer layer-3"></div>
+                    </div>
+                    <div class="quantum-scanner"></div>
+                </div>
+            </div>
+            <div class="scan-text">Welcome to SMA Negeri 1 Agats</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-menu">
+                    <!-- Logo dengan margin yang pas -->
+                    <div class="logo">
+                        <i class="fas fa-microscope"></i>
+                        <span>BIOLOGI<br><small>SMA N 1 AGATS</small></span>
+                    </div>
+                    
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <a href="materi.html"><i class="fas fa-book"></i> Materi <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="materi.html#kelas10">Kelas 10</a>
+                                <a href="materi.html#kelas11">Kelas 11</a>
+                                <a href="materi.html#kelas12">Kelas 12</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="download.html"><i class="fas fa-download"></i> Download <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown">
+                                <a href="download.html#modul">Modul PDF</a>
+                                <a href="download.html#presentasi">Presentasi</a>
+                                <a href="download.html#latihan">Soal Latihan</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="praktikum.html"><i class="fas fa-flask"></i> Praktikum</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="tentang.html"><i class="fas fa-user"></i> Guru</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Portal Pembelajaran <span class="highlight">Biologi</span></h1>
+                    <h2>SMA Negeri 1 Agats</h2>
+                    <p class="hero-subtitle">Dibimbing oleh <strong>Ibu Dian, S.Pd.</strong> - Menjelajahi Keajaiban Dunia Hayati dengan Pendekatan Modern dan Interaktif</p>
+                    <div class="hero-buttons">
+                        <a href="materi.html" class="cta-button primary">
+                            <i class="fas fa-play-circle"></i> Mulai Belajar
+                        </a>
+                        <a href="download.html" class="cta-button secondary">
+                            <i class="fas fa-download"></i> Download Materi
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Materi Lengkap</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Panduan Praktikum</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Soal Latihan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Mengapa Belajar di Portal Ini?</h2>
+                <p class="section-subtitle">Platform pembelajaran biologi terintegrasi yang dirancang khusus untuk siswa SMA Negeri 1 Agats</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Kurikulum Lengkap</h3>
+                        <p>Materi sesuai kurikulum terbaru untuk kelas 10, 11, dan 12 dengan pembahasan mendalam</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Akses Gratis</h3>
+                        <p>Semua materi dapat diunduh secara gratis tanpa biaya. Modul PDF, presentasi, dan soal latihan tersedia</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Praktikum Interaktif</h3>
+                        <p>Panduan praktikum step-by-step dengan penekanan pada keselamatan dan metode ilmiah</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Update Berkala</h3>
+                        <p>Konten terus diperbarui dengan temuan terbaru dalam bidang biologi dan pendidikan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kelas Overview Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Materi per Kelas</h2>
+                <p class="section-subtitle">Struktur pembelajaran yang terorganisir untuk setiap tingkat kelas</p>
+                
+                <div class="classes-grid">
+                    <div class="class-card">
+                        <div class="class-header">
+                            <div class="class-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3>Kelas 10</h3>
+                            <span class="class-badge">Dasar Biologi</span>
+                        </div>
+                        <div class="class-content">
+                            <h4>Topik Utama:</h4>
+                            <ul>
+                                <li>Struktur dan Fungsi Sel</li>
+                                <li>Jaringan Tumbuhan & Hewan</li>
+                                <li>Klasifikasi Makhluk Hidup</li>
+                                <li>Virus dan Monera</li>
+                            </ul>
+                            <div class="class-stats">
+                                <span><i class="fas fa-book"></i> 15 Modul</span>
+                                <span><i class="fas fa-vial"></i> 8 Praktikum</span>
+                            </div>
+                            <a href="materi.html#kelas10" class="class-button">
+                                Jelajahi Materi <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="class-card">
+                        <div class="class-header">
+                            <div class="class-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <h3>Kelas 11</h3>
+                            <span class="class-badge">Biologi Lanjutan</span>
+                        </div>
+                        <div class="class-content">
+                            <h4>Topik Utama:</h4>
+                            <ul>
+                                <li>Genetika dan Hereditas</li>
+                                <li>Metabolisme Sel</li>
+                                <li>Sistem Koordinasi</li>
+                                <li>Sistem Imun</li>
+                            </ul>
+                            <div class="class-stats">
+                                <span><i class="fas fa-book"></i> 18 Modul</span>
+                                <span><i class="fas fa-vial"></i> 10 Praktikum</span>
+                            </div>
+                            <a href="materi.html#kelas11" class="class-button">
+                                Jelajahi Materi <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="class-card">
+                        <div class="class-header">
+                            <div class="class-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <h3>Kelas 12</h3>
+                            <span class="class-badge">Persiapan Akhir</span>
+                        </div>
+                        <div class="class-content">
+                            <h4>Topik Utama:</h4>
+                            <ul>
+                                <li>Bioteknologi Modern</li>
+                                <li>Evolusi dan Ekologi</li>
+                                <li>Review Komprehensif</li>
+                                <li>Persiapan Ujian</li>
+                            </ul>
+                            <div class="class-stats">
+                                <span><i class="fas fa-book"></i> 20 Modul</span>
+                                <span><i class="fas fa-vial"></i> 7 Praktikum</span>
+                            </div>
+                            <a href="materi.html#kelas12" class="class-button">
+                                Jelajahi Materi <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Preview Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Materi Populer</h2>
+                <p class="section-subtitle">Download materi paling banyak diakses oleh siswa</p>
+                
+                <div class="download-preview-grid">
+                    <div class="download-preview-card">
+                        <div class="preview-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="preview-content">
+                            <h3>Modul Struktur Sel</h3>
+                            <p>Panduan lengkap organel sel dan fungsinya dengan gambar HD</p>
+                            <div class="preview-meta">
+                                <span><i class="fas fa-file"></i> PDF - 2.1MB</span>
+                                <span><i class="fas fa-download"></i> 150+ Download</span>
+                            </div>
+                        </div>
+                        <a href="download.html#modul" class="preview-download-btn">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <div class="download-preview-card">
+                        <div class="preview-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="preview-content">
+                            <h3>Genetika Dasar</h3>
+                            <p>Hukum Mendel, DNA, RNA, dan pola pewarisan sifat</p>
+                            <div class="preview-meta">
+                                <span><i class="fas fa-file"></i> PDF - 3.2MB</span>
+                                <span><i class="fas fa-download"></i> 120+ Download</span>
+                            </div>
+                        </div>
+                        <a href="download.html#modul" class="preview-download-btn">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+
+                    <div class="download-preview-card">
+                        <div class="preview-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="preview-content">
+                            <h3>Panduan Praktikum</h3>
+                            <p>Step-by-step 25 percobaan biologi dengan template laporan</p>
+                            <div class="preview-meta">
+                                <span><i class="fas fa-file"></i> PDF - 4.5MB</span>
+                                <span><i class="fas fa-download"></i> 95+ Download</span>
+                            </div>
+                        </div>
+                        <a href="download.html#modul" class="preview-download-btn">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="download.html" class="cta-button primary large">
+                        <i class="fas fa-arrow-down"></i> Lihat Semua Download
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teacher Preview Section -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="teacher-preview">
+                    <div class="teacher-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <h2>Dibimbing oleh Expert</h2>
+                        <h3>Ibu Dian, S.Pd.</h3>
+                        <p class="teacher-bio">
+                            Guru Biologi SMA Negeri 1 Agats dengan pengalaman mengajar lebih dari 10 tahun. 
+                            Berkomitmen menciptakan pembelajaran yang menyenangkan dan mudah dipahami 
+                            melalui pendekatan praktis dan teknologi modern.
+                        </p>
+                        <div class="teacher-qualifications">
+                            <div class="qualification">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>S1 Pendidikan Biologi</span>
+                            </div>
+                            <div class="qualification">
+                                <i class="fas fa-certificate"></i>
+                                <span>Guru Bersertifikasi</span>
+                            </div>
+                            <div class="qualification">
+                                <i class="fas fa-medal"></i>
+                                <span>10+ Tahun Pengalaman</span>
+                            </div>
+                        </div>
+                        <a href="tentang.html" class="cta-button secondary">
+                            <i class="fas fa-user"></i> Profil Lengkap
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Siap Memulai Perjalanan Belajar Biologi?</h2>
+                    <p>Bergabung dengan ratusan siswa yang sudah merasakan manfaat pembelajaran terstruktur</p>
+                    <div class="cta-buttons">
+                        <a href="materi.html" class="cta-button primary large">
+                            <i class="fas fa-rocket"></i> Mulai Sekarang
+                        </a>
+                        <a href="kontak.html" class="cta-button secondary large">
+                            <i class="fas fa-question-circle"></i> Butuh Bantuan?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Kontak</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> SMA Negeri 1 Agats</p>
+                        <p><i class="fas fa-envelope"></i> biologi@sman1agats.sch.id</p>
+                        <p><i class="fas fa-phone"></i> (0981) 123-4567</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Tautan Cepat</h3>
+                        <a href="index.html">Home</a>
+                        <a href="materi.html">Materi</a>
+                        <a href="download.html">Download</a>
+                        <a href="praktikum.html">Praktikum</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Media Sosial</h3>
+                        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+                        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="#"><i class="fab fa-google-drive"></i> Google Drive</a>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Update Terbaru</h3>
+                        <p>Bergabung dengan newsletter untuk mendapatkan update materi terbaru</p>
+                        <div class="newsletter">
+                            <input type="email" placeholder="Email Anda" class="newsletter-input">
+                            <button class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                     <p>&copy; 2025 Diana Seran. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        /* Hero Section Enhancements */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 140px 0 100px;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero-content h1 .highlight {
+            background: linear-gradient(135deg, #ffd700, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content h2 {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .cta-button.primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button.large {
+            padding: 18px 35px;
+            font-size: 1.1rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Features Section */
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto 50px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .feature-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Classes Section */
+        .classes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .class-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .class-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .class-header {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .class-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+        }
+
+        .class-icon i {
+            font-size: 1.8rem;
+        }
+
+        .class-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .class-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .class-content {
+            padding: 30px;
+        }
+
+        .class-content h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .class-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .class-content li {
+            padding: 8px 0;
+            color: #64748b;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .class-content li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .class-content li:last-child {
+            border-bottom: none;
+        }
+
+        .class-stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 15px 0;
+            border-top: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .class-stats span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .class-button {
+            display: block;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .class-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Download Preview */
+        .download-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .download-preview-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary);
+        }
+
+        .download-preview-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .preview-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8fafc;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .preview-icon i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .preview-content {
+            flex: 1;
+        }
+
+        .preview-content h3 {
+            color: var(--dark);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .preview-content p {
+            color: #64748b;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .preview-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .preview-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .preview-download-btn {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .preview-download-btn:hover {
+            background: var(--primary-dark);
+            transform: scale(1.1);
+        }
+
+        /* Teacher Preview */
+        .teacher-preview {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .teacher-image {
+            text-align: center;
+        }
+
+        .image-placeholder {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .image-placeholder i {
+            font-size: 5rem;
+            color: white;
+        }
+
+        .teacher-info h2 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .teacher-info h3 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .teacher-bio {
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .teacher-qualifications {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .qualification {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #cbd5e1;
+        }
+
+        .qualification i {
+            color: var(--accent);
+            width: 20px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #334155;
+            border-radius: 8px 0 0 8px;
+            background: #1e293b;
+            color: white;
+            outline: none;
+        }
+
+        .newsletter-input::placeholder {
+            color: #94a3b8;
+        }
+
+        .newsletter-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .newsletter-btn:hover {
+            background: #0891b2;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-12 {
+            margin-top: 3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-stats {
+                gap: 20px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .teacher-preview {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .classes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .download-preview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
